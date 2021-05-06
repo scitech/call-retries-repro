@@ -1,4 +1,6 @@
-We noticed test failures related to unhandled promise rejections on Node 15.5. 
+We noticed test failures related to unhandled promise rejections on Node 15.5, but really the "Call retries were exceeded" message could involve any Node exception.
+
+The test suites in this repo are all duplicates; there are 20+ of them to get Jest to run in parallel rather than sequentially.
 
 This works on 14.16, but fails on at least 15.5 and 16.1:
 ```
