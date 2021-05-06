@@ -1,3 +1,5 @@
+This repo is intended to produce the "Call retries were exceeded" message when running Jest, as described in https://github.com/facebook/jest/issues/8769
+
 We noticed test failures related to unhandled promise rejections on Node 15.5, but really the "Call retries were exceeded" message could involve any Node exception.
 
 The test suites in this repo are all duplicates; there are 20+ of them to get Jest to run in parallel rather than sequentially.
